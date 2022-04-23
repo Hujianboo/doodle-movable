@@ -58,8 +58,8 @@ export class MovableShape extends Component<PropsType, StateType> {
       dragging: true,
       startPos: [e.clientX - diffX, e.clientY - diffY],
     });
-    document.addEventListener('mousemove', handleMove.bind(this));
-    document.addEventListener('mouseup', handleEnd.bind(this));
+    document.addEventListener('mousemove', handleMove);
+    document.addEventListener('mouseup', handleEnd);
   }
   onRotateStart(e: React.MouseEvent<Element, MouseEvent>) {
     e.stopPropagation();

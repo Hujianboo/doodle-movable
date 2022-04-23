@@ -11,6 +11,9 @@ class App extends React.Component<Record<string, unknown>, undefined> {
         <MovableShape>
           <img src={photo.default} draggable={false}/>
         </MovableShape>
+        <MovableShape>
+          <img src={photo.default} draggable={false}/>
+        </MovableShape>
       </div>
     );
   }
